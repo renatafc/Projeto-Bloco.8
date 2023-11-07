@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desingn Systems</title>
+    <title>Design Systems</title>
     <link rel="stylesheet" href="stile.css">
 </head>
 
 <body>
     <header>
+        <button>
         <img src="assets/header/Menu-hambuerguer.png" alt="meu hambuerger" class="header__burguer">
+    </button>
         <img src="assets/header/slogan- header.png" alt="logo">
+        <button>
         <img src="assets/header/lupa.png" alt="lupa">
+    </button>
 
     </header>
 
@@ -180,26 +184,38 @@
         </section>
     </main>
     <footer>
-        <h2>Envie sua aplicação</h2>
+        <h2 class="titulos">Envie sua aplicação</h2>
         <form>
 
-            <section>
+           <div class="form_cadastro">
+            <div class="form__campo">
 
+                <input type="text" name="Nome" placeholder="Nome*">
                 </div>
+                <div class="form__campo">
+                    <select name="Cidade">
 
-                <input type="text" placeholder="Nome*">
-                <input type="password" placeholder="Cidade">
-                <input type="date" placeholder="18.10.2021">
-
-                <input type="text" placeholder="Email*">
-                <input type="text" placeholder="Mensagem">
+                <option value="Cidade" disabled selected>Cidade</option>
+            </select>
+            </div>
+            <div class="form__campo">
+                <input type="date"  name="date" placeholder="18.10.2021">
+            </div>
+            <div class="form__campo">
+                <input type="email" name="Nome" placeholder="Email*">
+            </div>
+            <div class="form__campo">
+                <input type="text" name="Nome" placeholder="Mensagem">
+            </div>
+            <div class="form__campo">
 
                 <button>Concluir</button>
                 <input type="checkbox" id="Concordo com a Política de privacidade."
                     value="Concordo com a Política de privacidade.">
                 <label>Concordo com a Política de privacidade.</label>
-                </div>
-            </section>
+            </div>    
+            </div>
+           
 
             <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
