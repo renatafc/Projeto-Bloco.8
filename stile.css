@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: aquamarine;
+}
 :root{
     --navbar:#F8F5FF;
     --botão1:#845EF7;
@@ -15,17 +18,34 @@
 }
 header{
    
-    width: 93vh;
+    width: 72vh;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--navbar);
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px;
 }
 .header__burguer{
-   
+
     padding-left: 10px;
     cursor: pointer;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+
+
+}
+.lupa{
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+    appearance: none;
+    border:0;
+    background-color: transparent;
+
+   
 
 }
 
@@ -37,18 +57,18 @@ header{
     background: cover;
     margin-top: 20px;
     background-size: cover;
-    width: 85vh;
+    width: 67vh;
     Height: 80vh;
     border-radius: 4%;
     position: relative;
-    left:10%
+    left:5%
 }
 .baner-1 h1{
     font-family:" Montserrat";
     font-weight: 700;
-    width: 95vh;
+    width: 50vh;
     Height:258px;
-    font-size: 75px;
+    font-size: 40px;
     padding-top: 40px;
     padding-left: 40px;
 }
@@ -60,7 +80,7 @@ header{
     Height:170px;
     position: relative;
     left: 8%;
-    top:-5vh
+    bottom: 10vh;
 
    
 }
@@ -97,16 +117,27 @@ header{
     font-family: "Open Sans";
     font-size: 4vh;
     font-weight: 400;
-    width: 83vh;
+    width: 70vh;
+   
  
     
+}
+.paragrafos-2{
+    padding-top: 15px;
+    padding-left: 40px;
+    font-family: "Open Sans";
+    font-size: 4vh;
+    font-weight: 400;
+    width: 55vh;
+   
+
 }
 .baner-2-1{
   
     position: relative;
     left: 3vh;
     top: 5vh;
-    width: 90vh;
+    width: 65vh;
     border-radius: 8vh;
    
 }
@@ -123,7 +154,7 @@ header{
     border-radius: 8%;
     border: var(--borda) 2px solid;
     background-color: var(--branco);
-    width: 90vh;
+    width: 65vh;
     height: 50vh;
     
 
@@ -136,27 +167,27 @@ header{
     border-radius: 8px;
     padding-left: 3px;
     position: relative;
-    top: 1vh;
+    top: 15vh;
     left: 5vh;
     height: 10vh;
-    width: 85vh;
+    width: 62vh;
    
 }
 .baner-2 span{
-    color: var(--botão1);
-    font-family:" Montserrat";
+   color: var(--botão1);
+   font-family:" Montserrat";
    font-weight: 700;
    font-size: 5vh;
 }
 .dado{
     position: relative;
-    top: 19vh;
+    top: 25vh;
     left:4vh;
     border: var(--borda) 2px solid;
     border-radius: 50px;
     background-color: var(--branco);
-    height: 60vh;
-    width:88vh;
+    height: 65vh;
+    width:65vh;
     padding-top: 30px;
     padding-left: 40px; 
     padding-block: 30px;
@@ -174,13 +205,15 @@ header{
 }
 .baner-3{
     position: relative;
-    top: 30vh
+    top: 30vh;
+
 }
 .img{
-    width: 85vh;
+    width: 65vh;
     height: 40vh;
     position: relative;
-    left: 30px;
+    left: 3px;
+    margin: 30px;
 
 }
 .Vantagens{
@@ -197,7 +230,7 @@ header{
     top: 11vh;
     left: 5vh;
     height: 15vh;
-    width: 38vh;
+    width: 30vh;
 }
 .Mais_1{
     font-family:" Montserrat";
@@ -214,9 +247,9 @@ header{
     padding-left: 3px;
     position: relative;
     top: -4vh;
-    left: 50vh;
+    left: 40vh;
     height: 15vh;
-    width: 38vh;
+    width:  30vh;
    
 
 }
@@ -230,20 +263,22 @@ header{
     position: relative;
     top:5vh;
     border: var(--borda)solid 2px ;
-    width: 92vh;
+    width: 65vh;
+    left: 30px;
     height: 55vh;
     border-radius: 30px;
     padding-left: 5vh;
     padding-top: 5vh;
     display: flex;
     margin-top: 5vh;
+   
 
 }
 .globo{
     width: 7vh;
     height: 7vh;
     position: relative;
-    top: 3vh;
+   
 }
 .servicos{
     position: relative;
@@ -255,10 +290,12 @@ header{
     
 }
 .img_2-1{
-    width: 92vh;
+    width: 65vh;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: 70px;
+    position: relative;
+    left: 30px;
 }
 .titulo-3{
     font-family: "Open Sans";
@@ -284,7 +321,7 @@ header{
     position: relative;
     top:70vh;
     background-color: var(--black);
-    width: 88vh;
+    width: 71vh;
     
 
 }
@@ -300,7 +337,7 @@ header{
 }
 .form__campo{
     background-color: var(--background-form);
-    width: 75vh;
+    width: 65vh;
     height: 8vh;
     border-radius: 10px;
     margin-top: 30px;
@@ -323,17 +360,17 @@ header{
     appearance: none;
     background-color: var(--botão1);
     border: solid 2px var(--botão1);
-    border-radius: 8px;
+    border-radius: 20px;
     padding-left: 3px;
     position: relative;
     top: 5vh;
     height: 10vh;
-    width: 75vh;
+    width: 65vh;
 
 } 
 .concluir_1 {
    position: relative;
-   top: 10px;
+   top: 5px;
    color: var(--branco);
    font-family:" Montserrat";
    font-weight: 700;
@@ -345,12 +382,14 @@ header{
     position: relative;
     top:10vh;
     left: 5vh;
-    font-size: 40px;
+    font-size: 35px;
+    width: 15vh;
     
 }
 .checkbox{
     color: var(--branco);
-    font-size: 30px;
-    position: relative;
-    top: 30px;
+    font-size: 27px;
+    margin-top: 40px;
+    
+
 }
